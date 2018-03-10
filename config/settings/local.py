@@ -22,6 +22,12 @@ TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 # Note: This key only used for development and testing.
 SECRET_KEY = env('DJANGO_SECRET_KEY', default='nveAvaxaXfmY0vPCvsr3ooyc2VCNPY5riqR9W1qh4sX4jYexlN')
 
+
+# HOSTS added by XLH
+# ------------------------------------------------------------------------------
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['192.168.1.50', ])
+
+
 # Mail settings
 # ------------------------------------------------------------------------------
 
